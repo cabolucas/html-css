@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonte em CSS</title>
+    <style>
+        body{
+            /*
+            Se o dispositivo não tiver arial vai para helvetica e se não achar helvetica vai para sans-serif
+            
+            Medidas Absolutas
+            cm, mm, in, px, (pt, pc não são aconselhaveis para tela, apenas para impressão em papel)
+
+            Medidas Relativas
+            em, ex, rem, vw (tamanho da tela em % largura), vh (tamanho tela altura)
+            
+            usar recomendações da W3C (PX E EM - normalmente 16px é igual a 1em)
+
+            Tamanho da fonte. (weigth - negrito; )
+
+            Fazer as configurações de fonte em um so lugar na seguinte ordem;
+
+            - fonte-style -> font-wigth -> fon-size -> font-family
+
+         font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: bolder;
+            font-style: italic;
+            =
+            
+
+            */
+            font: italic bolder 1 'work sans', sans-serif;
+
+           
+        }
+
+        h1, h2{
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius maiores assumenda, eveniet rem sequi inventore perspiciatis qui expedita aliquid ut sint dolor optio architecto soluta nulla voluptatem dignissimos. Ad, inventore.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto asperiores quibusdam aspernatur cupiditate odio. Explicabo, sed distinctio fuga odio harum ut suscipit. Ullam eius inventore placeat consequatur nisi tempora harum?</p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos fugiat voluptas magnam laboriosam numquam aliquid voluptates, aspernatur velit, sunt nihil labore iure quos amet libero, rerum deserunt laudantium placeat!</p>
+    
+</body>
+</html>
