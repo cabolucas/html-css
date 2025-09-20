@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -25,17 +26,21 @@
             font-weight: bold;
             padding: 10px;
             background-color: lightgrey;
-        
+                    
         }
 
-        
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: lightgrey;
+        }
 
         thead, tfoot {
             background-color: gray;
             color: white;
         }
 
-        tbody > tr:nth-child(2n) {
+        tbody > tr:nth-child(2n) { /* pode usar também ao invez de 2n o odd - impar - ou even - par -  */
             background-color: lightgrey;
 
         }
