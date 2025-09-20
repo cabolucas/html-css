@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+
+    
+
+    <style>
+        /* Sempre que for fazer alinhamento vertical precisa ter o container e o conteudo*/
+        
+        #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: relative;
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+
+        }
+
+        #conteudo {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            /* so serve para alinhamento horizontal 
+            margin: auto;, para outros meios tem que usar a tags position
+            e posteriormente configura o left e o top paa ir mudando a posição do conteudo, pode usar porcentagem também
+            */
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+            /*o transform serve para fazer qualquer alteração na caixa, rotação posição ....*/
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <section id="container">
+        <article id="conteudo">
+            
+        </article>
+    </section>
+    
+</body>
+</html>
