@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+
+        }
+    </style>
+
+</head>
+<body>
+    <h1>faça uma escolha</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda provident facere porro laudantium aspernatur! Cumque nemo dolorum, ipsa explicabo fugit magnam non deserunt molestiae libero esse ea impedit culpa. Mollitia.</p>
+
+    <ul>
+        <!--PARA NÃO DEIXAR O IFRAME SEM NENHUMA PAGINA PODE COLOCAR O SRC NA TAG ou SRC DOC-->
+        <li><a href="pag001.html" target="frame" srcdoc="pag001.html">Primeira página</a></li>
+        <li><a href="#">Segunda página</a></li>
+        <li><a href="#">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore numquam suscipit nisi tenetur doloribus. Exercitationem non similique saepe omnis quibusdam maxime deserunt, eveniet consequuntur iure, est nemo. Tenetur, itaque perferendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam quos distinctio nobis blanditiis eos quis repellat quaerat quia laborum obcaecati atque, dignissimos, asperiores voluptates harum error repellendus, illo aspernatur quod!</p>
+
+    <iframe id="tela" name="frame" src="" frameborder="0"></iframe> 
+    <!-- colocando o name você consegue abrir uma pagina interna dentro do iframe-->
+
+
+</body>
+</html>
