@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <!--Os dados que são preechidos você pode mandar para asp java php java servidor (php é a linguagem mais popular)-->
+
+    <!-- OBS: Para o html e PHP todo imput precisa ter um 'name' - para javascript é mais usado o 'id'-->
+     <!--
+    o label vai relacionar o nome com a caixa a qual ele está ligado    
+     name = 
+    id =
+
+    Metódos de envio de formulários 
+    padrão - GET - só compartilha até 3mil bytes (Envia pelo html pelo url) 
+    não padrao - POST (não aparece na url porém pode olhar na requisição de headers do navegador inspecionar no navegador)
+    -->
+
+    <h1>Meu primeiro Formulário</h1>
+    <form action="cadastro.php"> 
+        
+        <!--caso queira desligar o complemento automatico do formulario que fica aparecendo quando vai digitar é só colocar o autocomplete off debtri de form-->
+
+
+
+
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="name" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="Sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+    
+</body>
+</html>
