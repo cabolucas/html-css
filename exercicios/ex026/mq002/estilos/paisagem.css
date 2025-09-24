@@ -1,3 +1,8 @@
 @charset "FTU-8";
 
-/*PAISAGEM*/
+/*PAISAGEM landscape*/
+
+body {
+    background: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom;
+}
