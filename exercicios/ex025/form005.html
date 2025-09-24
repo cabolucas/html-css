@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        fieldset {
+            width: 300px;
+        }
+
+        form legend#sexo {
+            padding: 10px;
+        }
+
+        form legend#esportes {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend id="sexo">Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M">Masculino
+            <input type="radio" name="sexo" id="isxfem" value="F">Feminino
+            <!--quando está usando o type 'radio' se no name colocar o mesmo nome conseguirar mudar o seletor-->
+        </fieldset>
+        <fieldset>
+            <legend id="sexo">Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas">Masculino
+            <input type="radio" name="sexo" id="isxfem">Feminino
+            <!--quando está usando o type 'radio' se no name colocar o mesmo nome conseguirar mudar o seletor-->
+
+            <legend id="esportes">Esportes Favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label>
+            <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label>
+            <input type="checkbox" name="esnat" id="iesnat">Natação
+            <input type="checkbox" name="esten" id="iesten">Tênis
+            <!--O label serve para correlacionar a caixa com o nome que a se refere-->
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+
+
+    </form>
+    
+</body>
+</html>
