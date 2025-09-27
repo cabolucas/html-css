@@ -18,10 +18,10 @@
             border: 1px solid black;
             text-align: center;
             flex-basis: 200px;
+            
 
 
-            flex-shrink: 1;
-            flex-grow: 1;
+            
 
         /*
         por padrão
@@ -29,7 +29,25 @@
         flex-shrink = 1 (pode encolher)
         flex-grow = 0 (não pode crescer)
         pode aplicar valores diferentes nos elementos -itens- dentro do container
+        caso queira fazer um crescer mais do que o outro tera que colocar as proporções em cada grow
         */
+        }
+
+        div#i1 {
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+
+        div#i2 {
+            flex-shrink: 0;
+            flex-grow: 1;
+            
+        }
+
+        div#i3 {
+            
+            flex-grow: 0;
+            flex-shrink: 0;
         }
 
 
@@ -37,11 +55,9 @@
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-    
-       
+        <div class="item" id="i1" >A</div>
+        <div class="item" id="i2" >B</div>
+        <div class="item" id="i3" >C</div>         
     </div>
     
 </body>
