@@ -9,23 +9,49 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    background-color: rgba(0, 149, 255, 0.326);
+    background-color: #656DA5;
     width: 100vw;
     height: 100vh;
 }
 
 header {
-    background-color: rgba(0, 149, 255, 0.459);
-    color: black;
+    background-color: #5D6ACF;
+    color: white;
     padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header > h1 {
-    border: 1px dotted black;
+    border: 1px dotted #465BFA;
+
+    flex: 0 0 200px;
 }
 
 header > nav {
     border: 1px dotted black;
+
+    display: flex;
+}
+
+header > nav > a {
+    background-color: rgb(15, 47, 71);
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+header > nav > a:hover {
+    background-color: white;
+    color: #656DA5;
+    transition: bacground color 0.5s;
 }
 
 main {
