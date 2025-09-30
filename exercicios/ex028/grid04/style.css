@@ -9,10 +9,24 @@ div.container{
 
 .caixa1 {
     background-color: brown;
+    /*
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 5; 
+    em baixo usamos a forma simplificada
+    é possível usar a tag span (1 span 3) indica que inicia na 1 e irá expandir até a 3
+    */
+
+    /*
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+    simplificando ainda mais. 
+    fica grid-area inicio / inicio / end / end
+    */
+
+    grid-area: 1 / 1 / 2 / 5;
+    
 
 
 }
