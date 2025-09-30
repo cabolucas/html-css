@@ -26,24 +26,32 @@
 
         div.container {
             border: 3px solid blue;
-            height: 250px;
+
             display: grid; /*obrigatorio antes das demais configurações*/
 
-           /* grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto; */
-            grid-template: repeat(3, auto) / repeat(3,auto);
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 80px 80px 80px;
+            /* grid-template: (3, auto) / repeat(3,auto); */
+
+           /*quando for acrescentado linha fora do que estava pré determinado para poder vir com a mesma formatação precisa colocar essa tag que esta abaixo o valor vai depender do que já estava pre definido*/
+            grid-auto-rows: 80px; 
+
+            grid-auto-columns: 150px;
+
+            /*Grid auto flow/columns quando o novo conteúdo for acrescentado será na nova linha abaixou ou na coluna dependendo da tag*/
+            grid-auto-flow: row;
 
             /* grid-gap: agora é somente gap */
             gap: 5px;
 
             /* align-items: start;
             justify-items: center; */
-            place-items: start center;
+            place-items: normal normal;
 
             /* align-content: space-between;
             justify-content: end; */
 
-            place-content: space-between end;
+            place-content: normal normal;
 
 
 
@@ -64,6 +72,9 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">h</div>
+        <div class="item">i</div>
+        <div class="item">j</div>
     </div>
 </body>
 </html>
