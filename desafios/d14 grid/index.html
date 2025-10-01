@@ -3,42 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio Grid</title>
+    <title>Desafio 1 Grid</title>
     <style>
         div.container {
-            display: grid;
-            grid-template-rows: repeat(8, 100px);
-            grid-template-columns: repeat(8, 1fr);
+            display: grid;            
+            grid-template-rows: 80px 40px 200px 40px;
+            grid-template-columns: 200px 150px;
+            gap: 5px;
         }
 
+        
+
         .caixaTop {
-            background-color: blue;
-            grid-area: 1 / 1 / 2 / 9;
+            
+            grid-area: 1 / 1 / 2 / 4;
             
         }
 
         .caixaMen {
-            background-color: brown;
-            grid-area: 2 / 1 / 3 / 9;
+            
+            grid-area: 2 / 1 / 3 / 2;
 
 
         }
 
         .caixaPrin {
-            background-color: blueviolet;
-            grid-area: 3 / 1 / 8 / 7;
+            
+            grid-area: 3 / -2 / -2 / -1;
             
         }
 
         .caixaSec {
-            background-color: aqua;
-            grid-area: 3 / 7 / 8 / 9;
+           
+            grid-area: -2 / 1 / -1 / -1;
 
         }
 
         .caixaRod {
-            background-color: blue;
-            grid-area: 8 / 1 / 9 / 9;
+            
+            grid-area: 4 / 1 / 5 / 3
 
         }
 
@@ -46,11 +49,27 @@
 </head>
 <body>
     <div class="container">
-        <div class="caixaTop">TOPO</div>
-        <div class="caixaMen">MENU</div>
-        <div class="caixaPrin">PRINCIPAL</div>
-        <div class="caixaSec">SECUNDARIO</div>
-        <div class="caixaRod">RODAPE</div>
+
+        <header>
+            <div class="caixaTop">TOPO</div>
+        </header>
+
+        <nav>
+            <div class="caixaMen">MENU</div>
+        </nav>
+
+        <main>
+            <div class="caixaPrin">PRINCIPAL</div>
+        </main>
+
+        <aside>
+            <div class="caixaSec">SECUNDARIO</div>
+        </aside>
+
+        <footer>
+            <div class="caixaRod">RODAPE</div>
+        </footer>
+
     </div>
     
 </body>
